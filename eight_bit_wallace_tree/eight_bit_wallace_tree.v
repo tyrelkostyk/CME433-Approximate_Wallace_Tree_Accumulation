@@ -118,7 +118,7 @@ eight_bit_wallace_tree_reduc_layer_4 L4 (
 
 	.w16_o(S[4]),
 	.w2048_o(S[11]),
-	.w4096_o_L4(L_34[8]),
+	.w4096_o_L3(L_34[8]),
 
 
 	.w32_o(L_45[0]),
@@ -144,7 +144,7 @@ eight_bit_wallace_tree_reduc_layer_5 L5 (
 
 	.w32_o(S[5]),
 	.w1024_o(S[10]),
-	.w2048_o_L5(L_45[6]),
+	.w2048_o_L4(L_45[6]),
 
 
 	.w64_o(L_56[0]),
@@ -166,14 +166,14 @@ eight_bit_wallace_tree_reduc_layer_6 L6 (
 
 	.w64_o(S[6]),
 	.w512_o(S[9]),
-	.w1024_o_L6(L_56[4]),
+	.w1024_o_L5(L_56[4]),
 
 
 	.w128_o(L_67[0]),
 	.w256_o(L_67[1])
 );
 
-eight_bit_wallace_tree_reduc_layer_6 L6 (
+eight_bit_wallace_tree_reduc_layer_7 L7 (
 	.A(A[0]),
 	.B(B[7]),
 
@@ -183,7 +183,7 @@ eight_bit_wallace_tree_reduc_layer_6 L6 (
 
 	.w128_o(S[7]),
 	.w256_o(S[8]),
-	.w512_o_L7(L_67[2])
+	.w512_o_L6(L_67[2])
 );
 
 endmodule
