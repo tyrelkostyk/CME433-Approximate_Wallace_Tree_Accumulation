@@ -1,3 +1,444 @@
 |eight_bit_wallace_tree
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN2
+B[3] => B[3].IN2
+B[4] => B[4].IN2
+B[5] => B[5].IN2
+B[6] => B[6].IN2
+B[7] => B[7].IN2
+S[0] << eight_bit_wallace_tree_reduc_layer_1:L1.w1_o
+S[1] << eight_bit_wallace_tree_reduc_layer_1:L1.w2_o
+S[2] << eight_bit_wallace_tree_reduc_layer_2:L2.w4_o
+S[3] << <GND>
+S[4] << <GND>
+S[5] << <GND>
+S[6] << <GND>
+S[7] << <GND>
+S[8] << <GND>
+S[9] << <GND>
+S[10] << <GND>
+S[11] << <GND>
+S[12] << <GND>
+S[13] << eight_bit_wallace_tree_reduc_layer_2:L2.w8192_o
+S[14] << eight_bit_wallace_tree_reduc_layer_1:L1.w16385_o
+S[15] << eight_bit_wallace_tree_reduc_layer_1:L1.w32768_o
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1
+A[0] => w1_o.IN0
+A[0] => comb.IN0
+A[1] => comb.IN0
+A[1] => comb.IN0
+A[2] => comb.IN0
+A[2] => comb.IN0
+A[3] => comb.IN0
+A[3] => comb.IN0
+A[4] => comb.IN0
+A[4] => comb.IN0
+A[5] => comb.IN0
+A[5] => comb.IN0
+A[6] => comb.IN0
+A[6] => comb.IN0
+A[6] => comb.IN0
+A[6] => comb.IN0
+A[6] => comb.IN0
+A[6] => comb.IN0
+A[6] => comb.IN0
+A[6] => comb.IN0
+A[7] => comb.IN0
+A[7] => comb.IN0
+A[7] => comb.IN0
+A[7] => comb.IN0
+A[7] => comb.IN0
+A[7] => comb.IN0
+A[7] => comb.IN0
+A[7] => comb.IN0
+B[0] => w1_o.IN1
+B[0] => comb.IN1
+B[0] => comb.IN1
+B[0] => comb.IN1
+B[0] => comb.IN1
+B[0] => comb.IN1
+B[0] => comb.IN1
+B[0] => comb.IN1
+B[1] => comb.IN1
+B[1] => comb.IN1
+B[1] => comb.IN1
+B[1] => comb.IN1
+B[1] => comb.IN1
+B[1] => comb.IN1
+B[1] => comb.IN1
+B[1] => comb.IN1
+B[2] => comb.IN1
+B[2] => comb.IN1
+B[3] => comb.IN1
+B[3] => comb.IN1
+B[4] => comb.IN1
+B[4] => comb.IN1
+B[5] => comb.IN1
+B[5] => comb.IN1
+B[6] => comb.IN1
+B[6] => comb.IN1
+B[7] => comb.IN1
+B[7] => comb.IN1
+w16385_in_L2 => w16385_in_L2.IN1
+w1_o <= w1_o.DB_MAX_OUTPUT_PORT_TYPE
+w2_o <= one_bit_half_adder:HA_w2.S
+w16385_o <= one_bit_full_adder:FA_w16385.S
+w32768_o <= one_bit_full_adder:FA_w16385.Cout
+w4_o <= one_bit_full_adder:FA_w4.S
+w8_o <= one_bit_full_adder:FA_w8.S
+w16_o <= one_bit_full_adder:FA_w16.S
+w32_o <= one_bit_full_adder:FA_w32.S
+w64_o <= one_bit_full_adder:FA_w64.S
+w128_o <= one_bit_full_adder:FA_w128.S
+w256_o <= one_bit_full_adder:FA_w256.S
+w512_o <= one_bit_full_adder:FA_w512.S
+w1024_o <= one_bit_full_adder:FA_w1024.S
+w2048_o <= one_bit_full_adder:FA_w2048.S
+w4096_o <= one_bit_full_adder:FA_w4096.S
+w8192_o <= one_bit_full_adder:FA_w8192.S
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_half_adder:HA_w2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w4
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w8
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w16
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w32
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w64
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w128
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w256
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w512
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w1024
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w2048
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w4096
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w8192
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_full_adder:FA_w16385
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2
+A[0] => comb.IN0
+A[1] => comb.IN0
+A[2] => comb.IN0
+A[3] => comb.IN0
+A[4] => comb.IN0
+A[5] => comb.IN0
+A[5] => comb.IN0
+A[5] => comb.IN0
+A[5] => comb.IN0
+A[5] => comb.IN0
+A[5] => comb.IN0
+B[2] => comb.IN1
+B[2] => comb.IN1
+B[2] => comb.IN1
+B[2] => comb.IN1
+B[2] => comb.IN1
+B[2] => comb.IN1
+B[3] => comb.IN1
+B[4] => comb.IN1
+B[5] => comb.IN1
+B[6] => comb.IN1
+B[7] => comb.IN1
+w8192_in_L3 => w8192_in_L3.IN1
+w4_in => w4_in.IN1
+w8_in => w8_in.IN1
+w16_in => w16_in.IN2
+w32_in => ~NO_FANOUT~
+w64_in => w64_in.IN1
+w128_in => w128_in.IN1
+w256_in => w256_in.IN1
+w512_in => w512_in.IN1
+w1024_in => w1024_in.IN1
+w2048_in => w2048_in.IN1
+w4096_in => w4096_in.IN1
+w8192_in => w8192_in.IN1
+w16385_o_L1 <= one_bit_full_adder:FA_w8192.Cout
+w4_o <= one_bit_half_adder:HA_w4.S
+w8192_o <= one_bit_full_adder:FA_w8192.S
+w8_o <= one_bit_full_adder:FA_w8.S
+w16_o <= one_bit_full_adder:FA_w16.S
+w32_o <= one_bit_full_adder:FA_w32.S
+w64_o <= one_bit_full_adder:FA_w64.S
+w128_o <= one_bit_full_adder:FA_w128.S
+w256_o <= one_bit_full_adder:FA_w256.S
+w512_o <= one_bit_full_adder:FA_w512.S
+w1024_o <= one_bit_full_adder:FA_w1024.S
+w2048_o <= one_bit_full_adder:FA_w2048.S
+w4096_o <= one_bit_full_adder:FA_w4096.S
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_half_adder:HA_w4
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w8
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w16
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w32
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w64
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w128
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w256
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w512
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w1024
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w2048
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w4096
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w8192
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 

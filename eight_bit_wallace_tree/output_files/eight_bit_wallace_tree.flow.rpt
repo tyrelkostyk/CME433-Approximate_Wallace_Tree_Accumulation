@@ -1,5 +1,5 @@
 Flow report for eight_bit_wallace_tree
-Sun Nov  3 16:16:39 2019
+Sun Nov  3 16:52:40 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Sun Nov  3 16:16:39 2019          ;
+; Flow Status                        ; Successful - Sun Nov  3 16:52:40 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; eight_bit_wallace_tree                          ;
 ; Top-level Entity Name              ; eight_bit_wallace_tree                          ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE6E22A7                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 52 / 6,272 ( < 1 % )                            ;
+;     Total combinational functions  ; 52 / 6,272 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 32 / 92 ( 35 % )                                ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 11/03/2019 16:16:28    ;
+; Start date & time ; 11/03/2019 16:52:18    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; eight_bit_wallace_tree ;
 +-------------------+------------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 202904457381192.157281938819382        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 202904457381192.157282153722547        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -94,8 +94,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 994 MB              ; 00:00:28                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:28                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 1009 MB             ; 00:00:28                           ;
+; Fitter               ; 00:00:03     ; 1.0                     ; 1353 MB             ; 00:00:03                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 926 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 910 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1158 MB             ; 00:00:01                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,6 +109,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
 +----------------------+------------------+---------+------------+----------------+
 ; Analysis & Synthesis ; ecetestpcL       ; Red Hat ; Red Hat    ; x86_64         ;
+; Fitter               ; ecetestpcL       ; Red Hat ; Red Hat    ; x86_64         ;
+; Assembler            ; ecetestpcL       ; Red Hat ; Red Hat    ; x86_64         ;
+; Timing Analyzer      ; ecetestpcL       ; Red Hat ; Red Hat    ; x86_64         ;
+; EDA Netlist Writer   ; ecetestpcL       ; Red Hat ; Red Hat    ; x86_64         ;
 +----------------------+------------------+---------+------------+----------------+
 
 
@@ -112,6 +120,10 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off eight_bit_wallace_tree -c eight_bit_wallace_tree
+quartus_fit --read_settings_files=off --write_settings_files=off eight_bit_wallace_tree -c eight_bit_wallace_tree
+quartus_asm --read_settings_files=off --write_settings_files=off eight_bit_wallace_tree -c eight_bit_wallace_tree
+quartus_sta eight_bit_wallace_tree -c eight_bit_wallace_tree
+quartus_eda --read_settings_files=off --write_settings_files=off eight_bit_wallace_tree -c eight_bit_wallace_tree
 
 
 
