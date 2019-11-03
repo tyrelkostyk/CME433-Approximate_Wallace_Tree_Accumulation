@@ -1,9 +1,9 @@
 module eight_bit_wallace_tree_reduc_layer_7 (
 	input A,											// reduced 8-bit input integers
 	input B,
-	input w128_in, w256_in,     	// 1-bit adder inputs (from layer 1)
-	output w512_o_L6,									// 1-bit propogated output to layer 1
-	output w128_o, w256_o,								// 1-bit direct output sums
+	input w128_in, w256_in,     	// 1-bit adder inputs
+	output w512_o_L6,									// 1-bit propogated output to layer 6
+	output w128_o, w256_o								// 1-bit direct output sums
 );
 
 wire w256_c;
