@@ -17,7 +17,7 @@ one_bit_half_adder HA_w64 (
 	.A( w64_in ),
 	.B( A[0] & B[6] ),
 	.S( w64_o ),
-	.Cout( w128_c )
+	.C( w128_c )
 );
 
 // WEIGHT 128 (2^7) //

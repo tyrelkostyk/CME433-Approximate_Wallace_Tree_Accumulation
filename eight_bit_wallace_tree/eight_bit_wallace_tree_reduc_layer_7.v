@@ -15,7 +15,7 @@ one_bit_half_adder HA_w128 (
 	.A( w128_in ),
 	.B( A & B ),
 	.S( w128_o ),
-	.Cout( w256_c )
+	.C( w256_c )
 );
 
 // WEIGHT 256 (2^8) //
@@ -24,7 +24,7 @@ one_bit_half_adder HA_w256 (
 	.A( w256_in ),
 	.B( w256_c ),
 	.S( w256_o ),
-	.Cout( w512_c_L6 )
+	.C( w512_c_L6 )
 );
 
 endmodule
