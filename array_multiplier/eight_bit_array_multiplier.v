@@ -1,6 +1,6 @@
 module eight_bit_array_multiplier(A, B, S);
 input [7:0] A, B;
-output [15:0] S
+output [15:0] S;
 
 wire [7:0] s1, s2, s3, s4, s5, s6, s7;
 wire [6:0] c;
