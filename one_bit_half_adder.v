@@ -1,8 +1,8 @@
-module one_bit_full_adder(A, B, Cin, S, Cout);
- input A, B, Cin;
- output S, Cout;
+module one_bit_half_adder(A, B, S, C);
+input A, B;
+output S, C;
 
- assign S = Cin ^ (A ^ B);
- assign Cout = (Cin & (A ^ B)) || (A & B);
+assign S = A ^ B;
+assign C = A & B;
 
 endmodule
