@@ -147,7 +147,7 @@ one_bit_full_adder FA_w8192 (
 one_bit_full_adder FA_w16385 (
 	.A( A[7] & B[7] ),
 	.B( w16385_c ),
-	.Cin( w16385_in_L2 ),
+	.Cin( w16385_p ),
 	.S( w16385 ),
 	.Cout( w32768 )
 );
