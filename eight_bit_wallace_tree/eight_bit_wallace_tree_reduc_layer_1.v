@@ -1,7 +1,9 @@
 module eight_bit_wallace_tree_reduc_layer_1 (
-	input [7:0] A, B,									// 8-bit input integers
-	output w1, w2, w16385, w32768,			// 1-bit sums (2^15=32,768)
-	output w4, w8, w16, w32, w64, w128, w256, w512, w1024, w2048, w4096, w8192
+	input [7:0] A, B,													// 8-bit input integers
+	input w16385_p,														// 1-bit propogated input
+	output w1, w2, w16385, w32768,						// 1-bit direct output sums (2^15=32,768)
+	output w4, w8, w16, w32, w64, w128, w256,	// 1-bit adder outputs (to subsequent layers)
+	output w512, w1024, w2048, w4096, w8192
 );
 
 wire w4_c, w8_c, w16_c, w32_c, w64_c, w128_c, w256_c, w512_c, w1024_c, w2048_c, w4096_c, w8192_c, w16385_c;
@@ -144,7 +146,7 @@ one_bit_full_adder FA_w8192 (
 one_bit_full_adder FA_w16385 (
 	.A( A[7] & B[7] ),
 	.B( w16385_c ),
-	.Cin( w16385_c ),
+	.Cin( w16385_p ),
 	.S( w16385 ),
 	.Cout( w32768 )
 );
