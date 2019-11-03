@@ -26,7 +26,7 @@ one_bit_full_adder FA_w64 (
 	.A( w64_in ),
 	.B( A[1] & B[5] ),
 	.S( w64_o ),
-	.C( w128_c )
+	.Cout( w128_c )
 );
 
 // WEIGHT 128 (2^7) //
