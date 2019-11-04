@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Nov  3 16:52:33 2019
+Fitter Status : Successful - Sun Nov  3 17:33:01 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : eight_bit_wallace_tree
 Top-level Entity Name : eight_bit_wallace_tree
 Family : Cyclone IV E
 Device : EP4CE6E22A7
 Timing Models : Final
-Total logic elements : 52 / 6,272 ( < 1 % )
-    Total combinational functions : 52 / 6,272 ( < 1 % )
+Total logic elements : 119 / 6,272 ( 2 % )
+    Total combinational functions : 119 / 6,272 ( 2 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
 Total pins : 32 / 92 ( 35 % )

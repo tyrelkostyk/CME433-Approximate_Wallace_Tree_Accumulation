@@ -2,7 +2,7 @@ module eight_bit_wallace_tree_reduc_layer_5 (
 	input [2:0] A,											// reduced 8-bit input integers
 	input [7:5] B,
 	input w1024_in_L6,
-	input w32_in, w64_in, w128_in, w256_in, w512_in, 1024_in,    	// 1-bit adder inputs
+	input w32_in, w64_in, w128_in, w256_in, w512_in, w1024_in,    	// 1-bit adder inputs
 	output w2048_o_L4,									// 1-bit propogated output to layer 4
 	output w32_o, w1024_o,								// 1-bit direct output sums
 	output w64_o, w128_o, w256_o, w512_o               // 1-bit adder outputs
@@ -66,7 +66,7 @@ one_bit_full_adder FA_w1024 (
 	.B( w1024_c ),
 	.Cin( w1024_in_L6 ),
 	.S( w1024_o ),
-	.Cout( w2048_c_L4 )
+	.Cout( w2048_o_L4 )
 );
 
 endmodule
