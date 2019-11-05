@@ -1,14 +1,20 @@
 module eight_bit_wallace_tree(
 	input [7:0] A, B,
-	output [15:0] S
+	output [15:0] S,
+	output [12:0] L_12,
+	output [10:0] L_23,
+	output [8:0]  L_34,
+	output [6:0]  L_45,
+	output [4:0]  L_56,
+	output [2:0]  L_67
 );
 
-wire [12:0] L_12;
-wire [10:0] L_23;
-wire [8:0]  L_34;
-wire [6:0]  L_45;
-wire [4:0]  L_56;
-wire [2:0]  L_67;
+// wire [12:0] L_12;
+// wire [10:0] L_23;
+// wire [8:0]  L_34;
+// wire [6:0]  L_45;
+// wire [4:0]  L_56;
+// wire [2:0]  L_67;
 
 eight_bit_wallace_tree_reduc_layer_1 L1 (
 	.A(A),

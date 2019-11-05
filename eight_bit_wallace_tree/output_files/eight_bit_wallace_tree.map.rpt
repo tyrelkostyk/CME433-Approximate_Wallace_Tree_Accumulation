@@ -1,5 +1,5 @@
 Analysis & Synthesis report for eight_bit_wallace_tree
-Sun Nov  3 17:32:57 2019
+Tue Nov  5 15:20:18 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov  3 17:32:57 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov  5 15:20:18 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; eight_bit_wallace_tree                          ;
 ; Top-level Entity Name              ; eight_bit_wallace_tree                          ;
@@ -341,7 +341,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -351,7 +351,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Sun Nov  3 17:32:44 2019
+    Info: Processing started: Tue Nov  5 15:20:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off eight_bit_wallace_tree -c eight_bit_wallace_tree
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -395,8 +395,8 @@ Info (21057): Implemented 151 device resources after synthesis - the final resou
     Info (21061): Implemented 119 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 1055 megabytes
-    Info: Processing ended: Sun Nov  3 17:32:57 2019
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Processing ended: Tue Nov  5 15:20:18 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:28
 
 

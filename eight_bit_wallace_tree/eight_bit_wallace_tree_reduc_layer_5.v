@@ -53,7 +53,7 @@ one_bit_full_adder FA_w256 (
 
 one_bit_full_adder FA_w512 (
 	.A( w512_in ),
-	.B( A[2] & B[6] ),
+	.B( A[2] & B[7] ),
 	.Cin( w512_c ),
 	.S( w512_o ),
 	.Cout( w1024_c )

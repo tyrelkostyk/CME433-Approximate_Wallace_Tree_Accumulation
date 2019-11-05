@@ -9,7 +9,13 @@ module testbench;
 
 bit clk;
 reg [7:0] A, B;
-wire [15:0] S_tree_Fapprox, S_tree_Papprox, S_tree_Exact, S_array;
+bit [15:0] S_tree_Fapprox, S_tree_Papprox, S_tree_Exact, S_array;
+bit [14:0] L_12;
+bit [13:0] L_23;
+bit [12:0]  L_34;
+bit [11:0]  L_45;
+bit [10:0]  L_56;
+bit [9:0]  L_67;
 
 int f_Tree_FApprox, f_Tree_PApprox, f_Tree_Exact, f_Array;
 
@@ -43,7 +49,13 @@ papprox_eight_bit_wallace_tree Tree_PApprox (
 eight_bit_wallace_tree Tree_Exact (
 	.A(A),
 	.B(B),
-	.S(S_tree_Exact)
+	.S(S_tree_Exact),
+	.L_12(L_12[12:0]),
+	.L_23(L_23[10:0]),
+	.L_34(L_34[8:0]),
+	.L_45(L_45[6:0]),
+	.L_56(L_56[4:0]),
+	.L_67(L_67[2:0])
 );
 
 eight_bit_array_multiplier Array_Multipler (
