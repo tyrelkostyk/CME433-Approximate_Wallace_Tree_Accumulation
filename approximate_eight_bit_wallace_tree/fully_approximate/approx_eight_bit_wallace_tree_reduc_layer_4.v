@@ -17,7 +17,7 @@ one_bit_half_adder HA_w16 (
 	.A( w16_in ),
 	.B( A[0] & B[4] ),
 	.S( w16_o ),
-	.Cout( w32_c )
+	.C( w32_c )
 );
 
 // WEIGHT 32 (2^5) //

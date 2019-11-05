@@ -173,7 +173,7 @@ eight_bit_wallace_tree_reduc_layer_6 L6 (
 	.w256_o(L_67[1])
 );
 
-eight_bit_wallace_tree_reduc_layer_7 L7 (
+eight_bit_wallace_tree_reduc_layer_6 L6 (
 	.A(A[0]),
 	.B(B[7]),
 
