@@ -53,23 +53,26 @@ eight_bit_array_multiplier Array_Multipler (
 );
 
 initial begin
-f_Tree_FApprox = $fopen("./outputs/Tree_FApprox_Results.txt", "w");
-f_Tree_PApprox = $fopen("./outputs/Tree_PApprox_Results.txt", "w");
-f_Tree_Exact = $fopen("./outputs/Tree_Exact_Results.txt", "w");
-f_Array = $fopen("./outputs/Array_Results.txt", "w");
-repeat (65025) begin
-	@( posedge clk );
-	$fdisplay(f_Tree_FApprox, "%0d", S_tree_Fapprox);
-	$fdisplay(f_Tree_PApprox, "%0d", S_tree_Papprox);
-	$fdisplay(f_Tree_Exact, "%0d", S_tree_Exact);
-	$fdisplay(f_Array, "%0d", S_array);
-	end
+f_Tree_FApprox = $fopen("outputs/Tree_FApprox_Results.txt", "w");
+f_Tree_PApprox = $fopen("outputs/Tree_PApprox_Results.txt", "w");
+f_Tree_Exact = $fopen("outputs/Tree_Exact_Results.txt", "w");
+f_Array = $fopen("outputs/Array_Results.txt", "w");
+end
 
+
+always @( posedge clk ) begin
+$fwrite(f_Tree_FApprox, "%0d\n", S_tree_Fapprox);
+$fwrite(f_Tree_PApprox, "%0d\n", S_tree_Papprox);
+$fwrite(f_Tree_Exact, "%0d\n", S_tree_Exact);
+$fwrite(f_Array, "%0d\n", S_array);
+end
+
+initial begin
+	#135000;
 	$fclose(f_Tree_FApprox);
 	$fclose(f_Tree_PApprox);
 	$fclose(f_Tree_Exact);
 	$fclose(f_Array);
-
 	#100 $stop;
 end
 
