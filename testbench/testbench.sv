@@ -23,7 +23,7 @@ end
 always @( posedge clk )
 A = A + 8'd1;
 
-always @( posedge clk )
+always @ *
 if ( A == 8'd0 )
 	B = B + 8'd1;
 
