@@ -25,6 +25,7 @@ one_bit_half_adder HA_w32 (
 approximate_full_adder FA_w64 (
 	.A( w64_in ),
 	.B( A[1] & B[5] ),
+	.Cin( w64_c ),
 	.S( w64_o ),
 	.Cout( w128_c )
 );
