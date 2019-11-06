@@ -5,6 +5,7 @@ vmap work work
 
 vlog approximate_eight_bit_wallace_tree/first_layer_approximate/*.v
 vlog approximate_eight_bit_wallace_tree/fully_approximate/*.v
+vlog approximate_eight_bit_wallace_tree/one_adder_approximate/*.v
 vlog array_multiplier/*.v
 vlog eight_bit_wallace_tree/*.v
 vlog testbench/*.sv

@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at array_levels.v(6): object "C" differs only in case from object "c" in the same scope File: /home/aww849/engr-ece/cme433/literature review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_levels.v Line: 6
+Info (10281): Verilog HDL Declaration information at array_level_one.v(5): object "C" differs only in case from object "c" in the same scope File: /home/aww849/engr-ece/cme433/literature review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_level_one.v Line: 5

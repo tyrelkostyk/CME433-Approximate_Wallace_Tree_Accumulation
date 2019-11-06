@@ -1,0 +1,421 @@
+Analysis & Synthesis report for papprox_eight_bit_wallace_tree
+Wed Nov  6 16:43:19 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "eight_bit_wallace_tree_reduc_layer_7:L7|one_bit_half_adder:HA_w256"
+ 10. Port Connectivity Checks: "eight_bit_wallace_tree_reduc_layer_6:L6|one_bit_full_adder:FA_w512"
+ 11. Port Connectivity Checks: "eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_full_adder:FA_w1024"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Nov  6 16:43:19 2019           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                      ; papprox_eight_bit_wallace_tree                  ;
+; Top-level Entity Name              ; papprox_eight_bit_wallace_tree                  ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 108                                             ;
+;     Total combinational functions  ; 108                                             ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 32                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                      ;
++------------------------------------------------------------------+--------------------------------+--------------------------------+
+; Option                                                           ; Setting                        ; Default Value                  ;
++------------------------------------------------------------------+--------------------------------+--------------------------------+
+; Device                                                           ; EP4CE115F29C7                  ;                                ;
+; Top-level entity name                                            ; papprox_eight_bit_wallace_tree ; papprox_eight_bit_wallace_tree ;
+; Family name                                                      ; Cyclone IV E                   ; Cyclone V                      ;
+; Use smart compilation                                            ; Off                            ; Off                            ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                             ; On                             ;
+; Enable compact report table                                      ; Off                            ; Off                            ;
+; Restructure Multiplexers                                         ; Auto                           ; Auto                           ;
+; Create Debugging Nodes for IP Cores                              ; Off                            ; Off                            ;
+; Preserve fewer node names                                        ; On                             ; On                             ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                         ; Enable                         ;
+; Verilog Version                                                  ; Verilog_2001                   ; Verilog_2001                   ;
+; VHDL Version                                                     ; VHDL_1993                      ; VHDL_1993                      ;
+; State Machine Processing                                         ; Auto                           ; Auto                           ;
+; Safe State Machine                                               ; Off                            ; Off                            ;
+; Extract Verilog State Machines                                   ; On                             ; On                             ;
+; Extract VHDL State Machines                                      ; On                             ; On                             ;
+; Ignore Verilog initial constructs                                ; Off                            ; Off                            ;
+; Iteration limit for constant Verilog loops                       ; 5000                           ; 5000                           ;
+; Iteration limit for non-constant Verilog loops                   ; 250                            ; 250                            ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                             ; On                             ;
+; Infer RAMs from Raw Logic                                        ; On                             ; On                             ;
+; Parallel Synthesis                                               ; On                             ; On                             ;
+; DSP Block Balancing                                              ; Auto                           ; Auto                           ;
+; NOT Gate Push-Back                                               ; On                             ; On                             ;
+; Power-Up Don't Care                                              ; On                             ; On                             ;
+; Remove Redundant Logic Cells                                     ; Off                            ; Off                            ;
+; Remove Duplicate Registers                                       ; On                             ; On                             ;
+; Ignore CARRY Buffers                                             ; Off                            ; Off                            ;
+; Ignore CASCADE Buffers                                           ; Off                            ; Off                            ;
+; Ignore GLOBAL Buffers                                            ; Off                            ; Off                            ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                            ; Off                            ;
+; Ignore LCELL Buffers                                             ; Off                            ; Off                            ;
+; Ignore SOFT Buffers                                              ; On                             ; On                             ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                            ; Off                            ;
+; Optimization Technique                                           ; Balanced                       ; Balanced                       ;
+; Carry Chain Length                                               ; 70                             ; 70                             ;
+; Auto Carry Chains                                                ; On                             ; On                             ;
+; Auto Open-Drain Pins                                             ; On                             ; On                             ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                            ; Off                            ;
+; Auto ROM Replacement                                             ; On                             ; On                             ;
+; Auto RAM Replacement                                             ; On                             ; On                             ;
+; Auto DSP Block Replacement                                       ; On                             ; On                             ;
+; Auto Shift Register Replacement                                  ; Auto                           ; Auto                           ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                           ; Auto                           ;
+; Auto Clock Enable Replacement                                    ; On                             ; On                             ;
+; Strict RAM Replacement                                           ; Off                            ; Off                            ;
+; Allow Synchronous Control Signals                                ; On                             ; On                             ;
+; Force Use of Synchronous Clear Signals                           ; Off                            ; Off                            ;
+; Auto RAM Block Balancing                                         ; On                             ; On                             ;
+; Auto RAM to Logic Cell Conversion                                ; Off                            ; Off                            ;
+; Auto Resource Sharing                                            ; Off                            ; Off                            ;
+; Allow Any RAM Size For Recognition                               ; Off                            ; Off                            ;
+; Allow Any ROM Size For Recognition                               ; Off                            ; Off                            ;
+; Allow Any Shift Register Size For Recognition                    ; Off                            ; Off                            ;
+; Use LogicLock Constraints during Resource Balancing              ; On                             ; On                             ;
+; Ignore translate_off and synthesis_off directives                ; Off                            ; Off                            ;
+; Timing-Driven Synthesis                                          ; On                             ; On                             ;
+; Report Parameter Settings                                        ; On                             ; On                             ;
+; Report Source Assignments                                        ; On                             ; On                             ;
+; Report Connectivity Checks                                       ; On                             ; On                             ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                            ; Off                            ;
+; Synchronization Register Chain Length                            ; 2                              ; 2                              ;
+; Power Optimization During Synthesis                              ; Normal compilation             ; Normal compilation             ;
+; HDL message level                                                ; Level2                         ; Level2                         ;
+; Suppress Register Optimization Related Messages                  ; Off                            ; Off                            ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                           ; 5000                           ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                           ; 5000                           ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                            ; 100                            ;
+; Clock MUX Protection                                             ; On                             ; On                             ;
+; Auto Gated Clock Conversion                                      ; Off                            ; Off                            ;
+; Block Design Naming                                              ; Auto                           ; Auto                           ;
+; SDC constraint protection                                        ; Off                            ; Off                            ;
+; Synthesis Effort                                                 ; Auto                           ; Auto                           ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                             ; On                             ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                            ; Off                            ;
+; Analysis & Synthesis Message Level                               ; Medium                         ; Medium                         ;
+; Disable Register Merging Across Hierarchies                      ; Auto                           ; Auto                           ;
+; Resource Aware Inference For Block RAM                           ; On                             ; On                             ;
++------------------------------------------------------------------+--------------------------------+--------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                    ;
++-----------------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path              ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                                                                         ; Library ;
++-----------------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; eight_bit_wallace_tree_reduc_layer_3.v        ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_3.v        ;         ;
+; eight_bit_wallace_tree_reduc_layer_7.v        ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v        ;         ;
+; papprox_eight_bit_wallace_tree.v              ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v              ;         ;
+; eight_bit_wallace_tree_reduc_layer_2.v        ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_2.v        ;         ;
+; approximate_full_adder.v                      ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/approximate_full_adder.v                      ;         ;
+; approx_eight_bit_wallace_tree_reduc_layer_1.v ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v ;         ;
+; eight_bit_wallace_tree_reduc_layer_4.v        ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_4.v        ;         ;
+; one_bit_full_adder.v                          ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_full_adder.v                          ;         ;
+; one_bit_half_adder.v                          ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_half_adder.v                          ;         ;
+; eight_bit_wallace_tree_reduc_layer_5.v        ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v        ;         ;
+; eight_bit_wallace_tree_reduc_layer_6.v        ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v        ;         ;
++-----------------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 108        ;
+;                                             ;            ;
+; Total combinational functions               ; 108        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 86         ;
+;     -- 3 input functions                    ; 12         ;
+;     -- <=2 input functions                  ; 10         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 108        ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 32         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; A[0]~input ;
+; Maximum fan-out                             ; 16         ;
+; Total fan-out                               ; 448        ;
+; Average fan-out                             ; 2.60       ;
++---------------------------------------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                           ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                             ; Entity Name                                 ; Library Name ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------+--------------+
+; |papprox_eight_bit_wallace_tree                     ; 108 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |papprox_eight_bit_wallace_tree                                                                                 ; papprox_eight_bit_wallace_tree              ; work         ;
+;    |approx_eight_bit_wallace_tree_reduc_layer_1:L1| ; 31 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1                                  ; approx_eight_bit_wallace_tree_reduc_layer_1 ; work         ;
+;       |approximate_full_adder:FA_w1024|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w1024  ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w128|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w128   ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w16385|            ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w16385 ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w16|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w16    ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w2048|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w2048  ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w256|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w256   ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w32|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w32    ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w4096|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w4096  ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w4|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w4     ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w512|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w512   ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w64|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w64    ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w8192|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w8192  ; approximate_full_adder                      ; work         ;
+;       |approximate_full_adder:FA_w8|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w8     ; approximate_full_adder                      ; work         ;
+;       |one_bit_half_adder:HA_w2|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|approx_eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_half_adder:HA_w2         ; one_bit_half_adder                          ; work         ;
+;    |eight_bit_wallace_tree_reduc_layer_2:L2|        ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2                                         ; eight_bit_wallace_tree_reduc_layer_2        ; work         ;
+;       |one_bit_full_adder:FA_w1024|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w1024             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w128|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w128              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w16|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w16               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w2048|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w2048             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w256|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w256              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w32|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w32               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w4096|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w4096             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w512|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w512              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w64|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w64               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w8192|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w8192             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w8|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w8                ; one_bit_full_adder                          ; work         ;
+;       |one_bit_half_adder:HA_w4|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_half_adder:HA_w4                ; one_bit_half_adder                          ; work         ;
+;    |eight_bit_wallace_tree_reduc_layer_3:L3|        ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3                                         ; eight_bit_wallace_tree_reduc_layer_3        ; work         ;
+;       |one_bit_full_adder:FA_w1024|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w1024             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w128|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w128              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w16|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w16               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w2048|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w2048             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w256|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w256              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w32|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w32               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w4096|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w4096             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w512|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w512              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w64|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_full_adder:FA_w64               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_half_adder:HA_w8|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_3:L3|one_bit_half_adder:HA_w8                ; one_bit_half_adder                          ; work         ;
+;    |eight_bit_wallace_tree_reduc_layer_4:L4|        ; 15 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4                                         ; eight_bit_wallace_tree_reduc_layer_4        ; work         ;
+;       |one_bit_full_adder:FA_w1024|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_full_adder:FA_w1024             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w128|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_full_adder:FA_w128              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w2048|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_full_adder:FA_w2048             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w256|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_full_adder:FA_w256              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w32|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_full_adder:FA_w32               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w512|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_full_adder:FA_w512              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w64|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_full_adder:FA_w64               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_half_adder:HA_w16|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_4:L4|one_bit_half_adder:HA_w16               ; one_bit_half_adder                          ; work         ;
+;    |eight_bit_wallace_tree_reduc_layer_5:L5|        ; 11 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_5:L5                                         ; eight_bit_wallace_tree_reduc_layer_5        ; work         ;
+;       |one_bit_full_adder:FA_w1024|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_full_adder:FA_w1024             ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w128|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_full_adder:FA_w128              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w256|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_full_adder:FA_w256              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w512|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_full_adder:FA_w512              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w64|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_full_adder:FA_w64               ; one_bit_full_adder                          ; work         ;
+;       |one_bit_half_adder:HA_w32|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_half_adder:HA_w32               ; one_bit_half_adder                          ; work         ;
+;    |eight_bit_wallace_tree_reduc_layer_6:L6|        ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_6:L6                                         ; eight_bit_wallace_tree_reduc_layer_6        ; work         ;
+;       |one_bit_full_adder:FA_w128|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_6:L6|one_bit_full_adder:FA_w128              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w256|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_6:L6|one_bit_full_adder:FA_w256              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_full_adder:FA_w512|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_6:L6|one_bit_full_adder:FA_w512              ; one_bit_full_adder                          ; work         ;
+;       |one_bit_half_adder:HA_w64|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_6:L6|one_bit_half_adder:HA_w64               ; one_bit_half_adder                          ; work         ;
+;    |eight_bit_wallace_tree_reduc_layer_7:L7|        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_7:L7                                         ; eight_bit_wallace_tree_reduc_layer_7        ; work         ;
+;       |one_bit_half_adder:HA_w128|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_7:L7|one_bit_half_adder:HA_w128              ; one_bit_half_adder                          ; work         ;
+;       |one_bit_half_adder:HA_w256|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |papprox_eight_bit_wallace_tree|eight_bit_wallace_tree_reduc_layer_7:L7|one_bit_half_adder:HA_w256              ; one_bit_half_adder                          ; work         ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eight_bit_wallace_tree_reduc_layer_7:L7|one_bit_half_adder:HA_w256"                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eight_bit_wallace_tree_reduc_layer_6:L6|one_bit_full_adder:FA_w512"                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eight_bit_wallace_tree_reduc_layer_5:L5|one_bit_full_adder:FA_w1024"                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 32                          ;
+; cycloneiii_lcell_comb ; 108                         ;
+;     normal            ; 108                         ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 86                          ;
+;                       ;                             ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 13.03                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Wed Nov  6 16:43:05 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off papprox_eight_bit_wallace_tree -c papprox_eight_bit_wallace_tree
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_wallace_tree_reduc_layer_3.v
+    Info (12023): Found entity 1: eight_bit_wallace_tree_reduc_layer_3 File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_wallace_tree_reduc_layer_7.v
+    Info (12023): Found entity 1: eight_bit_wallace_tree_reduc_layer_7 File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file papprox_eight_bit_wallace_tree.v
+    Info (12023): Found entity 1: papprox_eight_bit_wallace_tree File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_wallace_tree_reduc_layer_2.v
+    Info (12023): Found entity 1: eight_bit_wallace_tree_reduc_layer_2 File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file approximate_full_adder.v
+    Info (12023): Found entity 1: approximate_full_adder File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/approximate_full_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file approx_eight_bit_wallace_tree_reduc_layer_1.v
+    Info (12023): Found entity 1: approx_eight_bit_wallace_tree_reduc_layer_1 File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_wallace_tree_reduc_layer_4.v
+    Info (12023): Found entity 1: eight_bit_wallace_tree_reduc_layer_4 File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file one_bit_full_adder.v
+    Info (12023): Found entity 1: one_bit_full_adder File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_full_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file one_bit_half_adder.v
+    Info (12023): Found entity 1: one_bit_half_adder File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_half_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_wallace_tree_reduc_layer_5.v
+    Info (12023): Found entity 1: eight_bit_wallace_tree_reduc_layer_5 File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_wallace_tree_reduc_layer_6.v
+    Info (12023): Found entity 1: eight_bit_wallace_tree_reduc_layer_6 File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at eight_bit_wallace_tree_reduc_layer_7.v(27): created implicit net for "w512_c_L6" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at eight_bit_wallace_tree_reduc_layer_5.v(70): created implicit net for "w2048_c_L4" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v Line: 70
+Warning (10236): Verilog HDL Implicit Net warning at eight_bit_wallace_tree_reduc_layer_6.v(50): created implicit net for "w1024_c_L5" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v Line: 50
+Info (12127): Elaborating entity "papprox_eight_bit_wallace_tree" for the top level hierarchy
+Info (12128): Elaborating entity "approx_eight_bit_wallace_tree_reduc_layer_1" for hierarchy "approx_eight_bit_wallace_tree_reduc_layer_1:L1" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 35
+Info (12128): Elaborating entity "one_bit_half_adder" for hierarchy "approx_eight_bit_wallace_tree_reduc_layer_1:L1|one_bit_half_adder:HA_w2" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v Line: 22
+Info (12128): Elaborating entity "approximate_full_adder" for hierarchy "approx_eight_bit_wallace_tree_reduc_layer_1:L1|approximate_full_adder:FA_w4" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v Line: 32
+Info (12128): Elaborating entity "eight_bit_wallace_tree_reduc_layer_2" for hierarchy "eight_bit_wallace_tree_reduc_layer_2:L2" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 70
+Info (12128): Elaborating entity "one_bit_full_adder" for hierarchy "eight_bit_wallace_tree_reduc_layer_2:L2|one_bit_full_adder:FA_w8" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_2.v Line: 31
+Info (12128): Elaborating entity "eight_bit_wallace_tree_reduc_layer_3" for hierarchy "eight_bit_wallace_tree_reduc_layer_3:L3" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 102
+Info (12128): Elaborating entity "eight_bit_wallace_tree_reduc_layer_4" for hierarchy "eight_bit_wallace_tree_reduc_layer_4:L4" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 130
+Info (12128): Elaborating entity "eight_bit_wallace_tree_reduc_layer_5" for hierarchy "eight_bit_wallace_tree_reduc_layer_5:L5" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 154
+Warning (10034): Output port "w2048_o_L4" at eight_bit_wallace_tree_reduc_layer_5.v(6) has no driver File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v Line: 6
+Info (12128): Elaborating entity "eight_bit_wallace_tree_reduc_layer_6" for hierarchy "eight_bit_wallace_tree_reduc_layer_6:L6" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 174
+Warning (10034): Output port "w1024_o_L5" at eight_bit_wallace_tree_reduc_layer_6.v(6) has no driver File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v Line: 6
+Info (12128): Elaborating entity "eight_bit_wallace_tree_reduc_layer_7" for hierarchy "eight_bit_wallace_tree_reduc_layer_7:L7" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v Line: 187
+Warning (10034): Output port "w512_o_L6" at eight_bit_wallace_tree_reduc_layer_7.v(5) has no driver File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 140 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 108 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 1059 megabytes
+    Info: Processing ended: Wed Nov  6 16:43:19 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
+
+

@@ -5,6 +5,7 @@ add wave -noupdate -radix binary /testbench/A
 add wave -noupdate -radix binary /testbench/B
 add wave -noupdate -radix binary /testbench/S_tree_Fapprox
 add wave -noupdate -radix binary /testbench/S_tree_Papprox
+add wave -noupdate -radix binary /testbench/S_tree_Oapprox
 add wave -noupdate -radix binary /testbench/S_tree_Exact
 add wave -noupdate -radix binary /testbench/S_array
 add wave -noupdate -divider {Layer Connections}
