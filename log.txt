@@ -1,0 +1,18 @@
+Results: One Approximate Adder
+Number of errors: 7936
+Error Percentage: 12.109375 %
+Mean error distance: 1059.0967741935483
+Distance Percentage: 1.6287532090635115 %
+-----------------------------------
+Results: First Layer Approximate
+Number of errors: 20801
+Error Percentage: 31.73980712890625 %
+Mean error distance: 3311.2992644584397
+Distance Percentage: 5.09234796533401 %
+-----------------------------------
+Results: Fully Approximate
+Number of errors: 63502
+Error Percentage: 96.8963623046875 %
+Mean error distance: 12478.699883468238
+Distance Percentage: 19.190618813484413 %
+-----------------------------------

@@ -15,22 +15,22 @@ B[4] => B[4].IN7
 B[5] => B[5].IN7
 B[6] => B[6].IN7
 B[7] => B[7].IN7
-S[0] << S.DB_MAX_OUTPUT_PORT_TYPE
-S[1] << array_level_one:lvl_1.S
-S[2] << array_levels:lvl_2.S
-S[3] << array_levels:lvl_3.S
-S[4] << array_levels:lvl_4.S
-S[5] << array_levels:lvl_5.S
-S[6] << array_levels:lvl_6.S
-S[7] << array_levels:lvl_7.S
-S[8] << array_levels:lvl_7.S
-S[9] << array_levels:lvl_7.S
-S[10] << array_levels:lvl_7.S
-S[11] << array_levels:lvl_7.S
-S[12] << array_levels:lvl_7.S
-S[13] << array_levels:lvl_7.S
-S[14] << array_levels:lvl_7.S
-S[15] << array_levels:lvl_7.C
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= array_level_one:lvl_1.S
+S[2] <= array_levels:lvl_2.S
+S[3] <= array_levels:lvl_3.S
+S[4] <= array_levels:lvl_4.S
+S[5] <= array_levels:lvl_5.S
+S[6] <= array_levels:lvl_6.S
+S[7] <= array_levels:lvl_7.S
+S[8] <= array_levels:lvl_7.S
+S[9] <= array_levels:lvl_7.S
+S[10] <= array_levels:lvl_7.S
+S[11] <= array_levels:lvl_7.S
+S[12] <= array_levels:lvl_7.S
+S[13] <= array_levels:lvl_7.S
+S[14] <= array_levels:lvl_7.S
+S[15] <= array_levels:lvl_7.C
 
 
 |eight_bit_array_multiplier|array_level_one:lvl_1

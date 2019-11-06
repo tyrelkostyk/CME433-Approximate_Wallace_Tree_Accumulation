@@ -1,5 +1,5 @@
 Analysis & Synthesis report for eight_bit_array_multiplier
-Wed Nov  6 17:03:35 2019
+Wed Nov  6 17:21:10 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov  6 17:03:35 2019           ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov  6 17:21:10 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; eight_bit_array_multiplier                      ;
 ; Top-level Entity Name              ; eight_bit_array_multiplier                      ;
@@ -161,17 +161,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                              ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; array_levels.v                   ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_levels.v               ;         ;
-; one_bit_full_adder.v             ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/one_bit_full_adder.v         ;         ;
-; one_bit_half_adder.v             ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/one_bit_half_adder.v         ;         ;
-; array_level_one.v                ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_level_one.v            ;         ;
-; eight_bit_array_multiplier.v     ; yes             ; User Verilog HDL File  ; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/eight_bit_array_multiplier.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; array_levels.v                   ; yes             ; User Verilog HDL File  ; /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_levels.v               ;         ;
+; one_bit_full_adder.v             ; yes             ; User Verilog HDL File  ; /home/tck290/engr-ece/CME433_lit_review/array_multiplier/one_bit_full_adder.v         ;         ;
+; one_bit_half_adder.v             ; yes             ; User Verilog HDL File  ; /home/tck290/engr-ece/CME433_lit_review/array_multiplier/one_bit_half_adder.v         ;         ;
+; array_level_one.v                ; yes             ; User Verilog HDL File  ; /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_level_one.v            ;         ;
+; eight_bit_array_multiplier.v     ; yes             ; User Verilog HDL File  ; /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -316,7 +316,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -326,26 +326,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Nov  6 17:03:19 2019
+    Info: Processing started: Wed Nov  6 17:20:57 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off eight_bit_array_multiplier -c eight_bit_array_multiplier
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_array_multiplier_top.v
+    Info (12023): Found entity 1: eight_bit_array_multiplier_top File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file array_levels.v
-    Info (12023): Found entity 1: array_levels File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_levels.v Line: 1
+    Info (12023): Found entity 1: array_levels File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_levels.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file one_bit_full_adder.v
-    Info (12023): Found entity 1: one_bit_full_adder File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/one_bit_full_adder.v Line: 1
+    Info (12023): Found entity 1: one_bit_full_adder File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/one_bit_full_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file one_bit_half_adder.v
-    Info (12023): Found entity 1: one_bit_half_adder File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/one_bit_half_adder.v Line: 1
+    Info (12023): Found entity 1: one_bit_half_adder File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/one_bit_half_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file array_level_one.v
-    Info (12023): Found entity 1: array_level_one File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_level_one.v Line: 1
+    Info (12023): Found entity 1: array_level_one File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_level_one.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_array_multiplier.v
-    Info (12023): Found entity 1: eight_bit_array_multiplier File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/eight_bit_array_multiplier.v Line: 1
+    Info (12023): Found entity 1: eight_bit_array_multiplier File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier.v Line: 1
 Info (12127): Elaborating entity "eight_bit_array_multiplier" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at eight_bit_array_multiplier.v(8): truncated value with size 8 to match size of target (1) File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/eight_bit_array_multiplier.v Line: 8
-Info (12128): Elaborating entity "array_level_one" for hierarchy "array_level_one:lvl_1" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/eight_bit_array_multiplier.v Line: 10
-Info (12128): Elaborating entity "one_bit_half_adder" for hierarchy "array_level_one:lvl_1|one_bit_half_adder:ha1" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_level_one.v Line: 14
-Info (12128): Elaborating entity "one_bit_full_adder" for hierarchy "array_level_one:lvl_1|one_bit_full_adder:fa1" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_level_one.v Line: 19
-Info (12128): Elaborating entity "array_levels" for hierarchy "array_levels:lvl_2" File: /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/eight_bit_array_multiplier.v Line: 14
+Warning (10230): Verilog HDL assignment warning at eight_bit_array_multiplier.v(8): truncated value with size 8 to match size of target (1) File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier.v Line: 8
+Info (12128): Elaborating entity "array_level_one" for hierarchy "array_level_one:lvl_1" File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier.v Line: 10
+Info (12128): Elaborating entity "one_bit_half_adder" for hierarchy "array_level_one:lvl_1|one_bit_half_adder:ha1" File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_level_one.v Line: 14
+Info (12128): Elaborating entity "one_bit_full_adder" for hierarchy "array_level_one:lvl_1|one_bit_full_adder:fa1" File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_level_one.v Line: 19
+Info (12128): Elaborating entity "array_levels" for hierarchy "array_levels:lvl_2" File: /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -354,9 +356,9 @@ Info (21057): Implemented 151 device resources after synthesis - the final resou
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 119 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 1062 megabytes
-    Info: Processing ended: Wed Nov  6 17:03:35 2019
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 1058 megabytes
+    Info: Processing ended: Wed Nov  6 17:21:10 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:31
 
 

@@ -1,10 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_levels.v
-source_file = 1, /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/one_bit_full_adder.v
-source_file = 1, /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/one_bit_half_adder.v
-source_file = 1, /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_level_one.v
-source_file = 1, /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/eight_bit_array_multiplier.v
-source_file = 1, /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/db/eight_bit_array_multiplier.cbx.xml
+source_file = 1, /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier_top.v
+source_file = 1, /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_levels.v
+source_file = 1, /home/tck290/engr-ece/CME433_lit_review/array_multiplier/one_bit_full_adder.v
+source_file = 1, /home/tck290/engr-ece/CME433_lit_review/array_multiplier/one_bit_half_adder.v
+source_file = 1, /home/tck290/engr-ece/CME433_lit_review/array_multiplier/array_level_one.v
+source_file = 1, /home/tck290/engr-ece/CME433_lit_review/array_multiplier/eight_bit_array_multiplier.v
+source_file = 1, /home/tck290/engr-ece/CME433_lit_review/array_multiplier/db/eight_bit_array_multiplier.cbx.xml
 design_name = eight_bit_array_multiplier
 instance = comp, \S[0]~output , S[0]~output, eight_bit_array_multiplier, 1
 instance = comp, \S[1]~output , S[1]~output, eight_bit_array_multiplier, 1
