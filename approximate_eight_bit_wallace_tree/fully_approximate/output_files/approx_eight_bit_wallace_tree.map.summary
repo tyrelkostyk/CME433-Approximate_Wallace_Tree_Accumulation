@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Nov  6 16:48:51 2019
+Analysis & Synthesis Status : Successful - Wed Nov  6 22:16:02 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : approx_eight_bit_wallace_tree
 Top-level Entity Name : approx_eight_bit_wallace_tree
 Family : Cyclone IV E
-Total logic elements : 96
-    Total combinational functions : 96
+Total logic elements : 110
+    Total combinational functions : 110
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 32

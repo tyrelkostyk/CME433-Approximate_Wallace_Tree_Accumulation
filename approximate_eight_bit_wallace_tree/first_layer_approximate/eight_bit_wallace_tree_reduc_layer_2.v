@@ -43,7 +43,7 @@ one_bit_full_adder FA_w16 (
 // WEIGHT 32 (2^5) //
 
 one_bit_full_adder FA_w32 (
-	.A( w16_in ),
+	.A( w32_in ),
 	.B( A[3] & B[2] ),
 	.Cin( w32_c ),
 	.S( w32_o ),

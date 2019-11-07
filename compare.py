@@ -54,6 +54,7 @@ while f1_line != '' or f2_line != '' or f3_line != '' or f4_line != '':
     f4_line = f4.readline()
     lines += 1
 
+print("-----------------------------------")
 print("Results: One Approximate Adder")
 print("Number of errors:", errors1)
 print("Error Percentage:", (errors1/lines) * 100, "%")

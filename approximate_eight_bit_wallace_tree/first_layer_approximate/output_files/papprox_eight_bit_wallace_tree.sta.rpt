@@ -1,5 +1,5 @@
 Timing Analyzer report for papprox_eight_bit_wallace_tree
-Wed Nov  6 16:43:38 2019
+Wed Nov  6 22:10:09 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -95,7 +95,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.5%      ;
+;     Processor 2            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -282,8 +282,8 @@ No synchronizer chains to report.
 ; B[3]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; A[4]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; B[4]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; B[5]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; A[5]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; B[5]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; A[6]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; B[6]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; A[7]                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -398,9 +398,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 16    ; 16   ;
-; Unconstrained Input Port Paths  ; 199   ; 199  ;
+; Unconstrained Input Port Paths  ; 200   ; 200  ;
 ; Unconstrained Output Ports      ; 16    ; 16   ;
-; Unconstrained Output Port Paths ; 199   ; 199  ;
+; Unconstrained Output Port Paths ; 200   ; 200  ;
 +---------------------------------+-------+------+
 
 
@@ -506,7 +506,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Nov  6 16:43:36 2019
+    Info: Processing started: Wed Nov  6 22:10:07 2019
 Info: Command: quartus_sta papprox_eight_bit_wallace_tree -c papprox_eight_bit_wallace_tree
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -554,8 +554,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1001 megabytes
-    Info: Processing ended: Wed Nov  6 16:43:38 2019
+    Info: Peak virtual memory: 1004 megabytes
+    Info: Processing ended: Wed Nov  6 22:10:09 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

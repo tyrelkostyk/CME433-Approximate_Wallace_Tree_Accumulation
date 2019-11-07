@@ -47,7 +47,7 @@ approximate_full_adder FA_w512 (
 	.B( w512_c ),
 	.Cin( w512_in_L7 ),
 	.S( w512_o ),
-	.Cout( w1024_c_L5 )
+	.Cout( w1024_o_L5 )
 );
 
 endmodule

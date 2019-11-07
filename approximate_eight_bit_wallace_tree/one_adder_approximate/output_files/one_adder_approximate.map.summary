@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov  6 22:27:30 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : one_adder_approximate
+Top-level Entity Name : one_approx_eight_bit_wallace_tree_top
+Family : Cyclone IV E
+Total logic elements : 142
+    Total combinational functions : 126
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -24,7 +24,7 @@ one_bit_half_adder HA_w256 (
 	.A( w256_in ),
 	.B( w256_c ),
 	.S( w256_o ),
-	.C( w512_c_L6 )
+	.C( w512_o_L6 )
 );
 
 endmodule

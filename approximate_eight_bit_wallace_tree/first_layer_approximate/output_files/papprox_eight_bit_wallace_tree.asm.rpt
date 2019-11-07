@@ -1,5 +1,5 @@
 Assembler report for papprox_eight_bit_wallace_tree
-Wed Nov  6 16:43:35 2019
+Wed Nov  6 22:10:06 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Nov  6 16:43:35 2019 ;
+; Assembler Status      ; Successful - Wed Nov  6 22:10:06 2019 ;
 ; Revision Name         ; papprox_eight_bit_wallace_tree        ;
 ; Top-level Entity Name ; papprox_eight_bit_wallace_tree        ;
 ; Family                ; Cyclone IV E                          ;
@@ -52,13 +52,13 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; /home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation/approximate_eight_bit_wallace_tree/first_layer_approximate/output_files/papprox_eight_bit_wallace_tree.sof ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                                          ;
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                                          ;
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; /home/tck290/engr-ece/CME433_lit_review/approximate_eight_bit_wallace_tree/first_layer_approximate/output_files/papprox_eight_bit_wallace_tree.sof ;
++----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -66,8 +66,8 @@ refer to the applicable agreement for further details.
 +----------------+---------------------------------------------+
 ; Option         ; Setting                                     ;
 +----------------+---------------------------------------------+
-; JTAG usercode  ; 0x00572E19                                  ;
-; Checksum       ; 0x00572E19                                  ;
+; JTAG usercode  ; 0x00573CBF                                  ;
+; Checksum       ; 0x00573CBF                                  ;
 +----------------+---------------------------------------------+
 
 
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Nov  6 16:43:32 2019
+    Info: Processing started: Wed Nov  6 22:10:03 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off papprox_eight_bit_wallace_tree -c papprox_eight_bit_wallace_tree
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 940 megabytes
-    Info: Processing ended: Wed Nov  6 16:43:35 2019
+    Info: Peak virtual memory: 936 megabytes
+    Info: Processing ended: Wed Nov  6 22:10:06 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

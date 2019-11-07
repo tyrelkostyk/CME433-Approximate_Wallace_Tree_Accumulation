@@ -64,6 +64,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "S[15]",
+					"strict" : false
+				},
+				{
 					"name" : "A[0]",
 					"strict" : false
 				},
@@ -96,11 +100,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
+					"name" : "A[4]",
 					"strict" : false
 				},
 				{
@@ -112,19 +116,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[6]",
-					"strict" : false
-				},
-				{
 					"name" : "B[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A[7]",
+					"name" : "A[6]",
 					"strict" : false
 				},
 				{
 					"name" : "B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A[7]",
 					"strict" : false
 				}
 			]

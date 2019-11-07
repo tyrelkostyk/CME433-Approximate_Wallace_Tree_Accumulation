@@ -1,5 +1,5 @@
 Flow report for approx_eight_bit_wallace_tree
-Wed Nov  6 16:49:12 2019
+Wed Nov  6 22:16:24 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov  6 16:49:12 2019           ;
+; Flow Status                        ; Successful - Wed Nov  6 22:16:24 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; approx_eight_bit_wallace_tree                   ;
 ; Top-level Entity Name              ; approx_eight_bit_wallace_tree                   ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 96 / 114,480 ( < 1 % )                          ;
-;     Total combinational functions  ; 96 / 114,480 ( < 1 % )                          ;
+; Total logic elements               ; 110 / 114,480 ( < 1 % )                         ;
+;     Total combinational functions  ; 110 / 114,480 ( < 1 % )                         ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                             ;
 ; Total registers                    ; 0                                               ;
 ; Total pins                         ; 32 / 529 ( 6 % )                                ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+-------------------------------+
 ; Option            ; Setting                       ;
 +-------------------+-------------------------------+
-; Start date & time ; 11/06/2019 16:48:38           ;
+; Start date & time ; 11/06/2019 22:15:49           ;
 ; Main task         ; Compilation                   ;
 ; Revision Name     ; approx_eight_bit_wallace_tree ;
 +-------------------+-------------------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 345046515797.157308051831831           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 345046515779.157310014914178           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -85,6 +85,8 @@ refer to the applicable agreement for further details.
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
@@ -94,12 +96,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 1013 MB             ; 00:00:31                           ;
-; Fitter               ; 00:00:11     ; 1.0                     ; 1553 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 934 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 1006 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1169 MB             ; 00:00:01                           ;
-; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:51                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 1010 MB             ; 00:00:28                           ;
+; Fitter               ; 00:00:11     ; 1.0                     ; 1555 MB             ; 00:00:14                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 935 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 1004 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1171 MB             ; 00:00:01                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:48                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,11 +110,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+---------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
 +----------------------+------------------+---------+------------+----------------+
-; Analysis & Synthesis ; engr-elec74-06L  ; Red Hat ; Red Hat    ; x86_64         ;
-; Fitter               ; engr-elec74-06L  ; Red Hat ; Red Hat    ; x86_64         ;
-; Assembler            ; engr-elec74-06L  ; Red Hat ; Red Hat    ; x86_64         ;
-; Timing Analyzer      ; engr-elec74-06L  ; Red Hat ; Red Hat    ; x86_64         ;
-; EDA Netlist Writer   ; engr-elec74-06L  ; Red Hat ; Red Hat    ; x86_64         ;
+; Analysis & Synthesis ; engr-tau-19L     ; Red Hat ; Red Hat    ; x86_64         ;
+; Fitter               ; engr-tau-19L     ; Red Hat ; Red Hat    ; x86_64         ;
+; Assembler            ; engr-tau-19L     ; Red Hat ; Red Hat    ; x86_64         ;
+; Timing Analyzer      ; engr-tau-19L     ; Red Hat ; Red Hat    ; x86_64         ;
+; EDA Netlist Writer   ; engr-tau-19L     ; Red Hat ; Red Hat    ; x86_64         ;
 +----------------------+------------------+---------+------------+----------------+
 
 

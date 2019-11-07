@@ -7,10 +7,10 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/aww849/engr-ece/cme433/literature_review/CME433-Approximate_Wallace_Tree_Accumulation
+Z0 d/home/tck290/engr-ece/CME433_lit_review
 vapprox_eight_bit_wallace_tree
 Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z2 !s110 1573078306
+Z2 !s110 1573100767
 !i10b 1
 !s100 ?L7WN[Ti7:M[86f:9faGU2
 IE5kdTX6N5n9z7Z9S4<ZYK3
@@ -18,7 +18,7 @@ Z3 V`JN@9S9cnhjKRR_L]QIcM3
 Z4 !s105 testbench_sv_unit
 S1
 R0
-Z5 w1573078302
+Z5 w1573081719
 Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree.v
 Z6 8testbench/testbench.sv
 Z7 Ftestbench/testbench.sv
@@ -27,7 +27,7 @@ Z8 OE;L;10.3a;59
 r1
 !s85 0
 31
-Z9 !s108 1573078306.720562
+Z9 !s108 1573100767.444682
 Z10 !s107 array_multiplier/eight_bit_array_multiplier.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree.v|eight_bit_wallace_tree/eight_bit_wallace_tree.v|testbench/testbench.sv|
 Z11 !s90 -reportprogress|300|testbench/testbench.sv|
 !i113 0
@@ -36,30 +36,30 @@ vapprox_eight_bit_wallace_tree_reduc_layer_1
 R2
 !i10b 1
 !s100 5L8Zo7GI`Ge;HVgafacMO1
-ISLJen3?=K2c?HCLQJSzSg2
+I48XTc1K06@=GNgN:>Cl>=0
 R3
 R0
-w1572900974
-8approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v
-Fapproximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v
+w1572975223
+8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v
+Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v
 L0 1
 R8
 r1
 !s85 0
 31
-!s108 1573078306.194565
-!s107 approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/first_layer_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|
-!s90 -reportprogress|300|approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/first_layer_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v|
+Z13 !s108 1573100767.037172
+Z14 !s107 approximate_eight_bit_wallace_tree/fully_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/fully_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_top.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree.v|
+Z15 !s90 -reportprogress|300|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_top.v|approximate_eight_bit_wallace_tree/fully_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/fully_approximate/one_bit_half_adder.v|
 !i113 0
 R12
 vapprox_eight_bit_wallace_tree_reduc_layer_2
 R2
 !i10b 1
-!s100 I=8bLSBA0N<Ec7Y0YigNQ3
-IoHT@UaNW5:7YkVLM==`ce3
+!s100 YBO4TPO>0iX9H71>bnMk?2
+IRJn=>Vz18WYB]WdCe>edg1
 R3
 R0
-w1572900980
+w1573099005
 8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_2.v
 Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_2.v
 L0 1
@@ -67,19 +67,19 @@ R8
 r1
 !s85 0
 31
-Z13 !s108 1573078306.331212
-Z14 !s107 approximate_eight_bit_wallace_tree/fully_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/fully_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree.v|
-Z15 !s90 -reportprogress|300|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/fully_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/fully_approximate/one_bit_half_adder.v|
+R13
+R14
+R15
 !i113 0
 R12
 vapprox_eight_bit_wallace_tree_reduc_layer_3
 R2
 !i10b 1
-!s100 T8RMil0A`hY;Na89]Jia`1
-I163>;<>KcGKoje@DMlgP]3
+!s100 FPOj`M0G:QhM4l^D@Nfom2
+I[3;l8o_DF830>KAo0hIfE1
 R3
 R0
-w1572900983
+w1573099021
 8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_3.v
 Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_3.v
 L0 1
@@ -95,11 +95,11 @@ R12
 vapprox_eight_bit_wallace_tree_reduc_layer_4
 R2
 !i10b 1
-!s100 JOlT>0EISl0RF=61jz1KH3
-InkSIZ7OVJ21IXWZYhh0mZ3
+!s100 lM5iNWoHTdL[og;<CKAF[0
+Im7d9JB`bQoH?6ac:]7US12
 R3
 R0
-w1572984650
+w1573099117
 8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_4.v
 Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_4.v
 L0 1
@@ -115,11 +115,11 @@ R12
 vapprox_eight_bit_wallace_tree_reduc_layer_5
 R2
 !i10b 1
-!s100 [U5O5^M`QMBOL7e7LM^dL0
-IO1CFjS?L3mg0Ac]7ZlIdf1
+!s100 eO7SC40Jz2oClIW5U^cCZ2
+I_@dhn`Do5MjoeQY5;@NI_2
 R3
 R0
-w1573067873
+w1573099069
 8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_5.v
 Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_5.v
 L0 1
@@ -135,11 +135,11 @@ R12
 vapprox_eight_bit_wallace_tree_reduc_layer_6
 R2
 !i10b 1
-!s100 PRT_P=ATUf]:J[ib1dk^W1
-IRTTRZ0O?Rb2YF5EGC_O8^0
+!s100 gQc_c:nJhW[@==2iYkneX0
+Ibh7GF2nC9NEn8b<k[`=?A2
 R3
 R0
-w1572900993
+w1573098577
 8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_6.v
 Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_6.v
 L0 1
@@ -155,13 +155,33 @@ R12
 vapprox_eight_bit_wallace_tree_reduc_layer_7
 R2
 !i10b 1
-!s100 o6KAN<02c5?E@3e;3MgA@2
-I>]@o4_:bZ0fUFieWS=1aM2
+!s100 ;mU[WP?gzPiBFZ7[^MieG3
+IDNKoiH8gLl0OHn?`I`[LG3
 R3
 R0
-w1572900892
+w1573098590
 8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_7.v
 Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_reduc_layer_7.v
+L0 1
+R8
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R12
+vapprox_eight_bit_wallace_tree_top
+R2
+!i10b 1
+!s100 >bmZkEdBZDlWYeJV`N0@L3
+I8kzzHV2SD`H]b2g=Wn_Y@2
+R3
+R0
+w1573098436
+8approximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_top.v
+Fapproximate_eight_bit_wallace_tree/fully_approximate/approx_eight_bit_wallace_tree_top.v
 L0 1
 R8
 r1
@@ -179,7 +199,7 @@ R2
 IPBOWTTOV=FBI@nbEmn2K_3
 R3
 R0
-w1572818828
+R5
 8approximate_eight_bit_wallace_tree/one_adder_approximate/approximate_full_adder.v
 Fapproximate_eight_bit_wallace_tree/one_adder_approximate/approximate_full_adder.v
 L0 1
@@ -187,9 +207,9 @@ R8
 r1
 !s85 0
 31
-Z16 !s108 1573078306.436144
-Z17 !s107 approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/one_adder_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|
-Z18 !s90 -reportprogress|300|approximate_eight_bit_wallace_tree/one_adder_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/one_adder_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_half_adder.v|
+Z16 !s108 1573100767.155590
+Z17 !s107 approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree_top.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/one_adder_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|
+Z18 !s90 -reportprogress|300|approximate_eight_bit_wallace_tree/one_adder_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/one_adder_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/one_adder_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree_top.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/one_adder_approximate/one_bit_half_adder.v|
 !i113 0
 R12
 varray_level_one
@@ -199,7 +219,7 @@ R2
 I;gm4@01kX2I3oY5Mf;GB83
 R3
 R0
-w1572816856
+Z19 w1572819618
 8array_multiplier/array_level_one.v
 Farray_multiplier/array_level_one.v
 L0 1
@@ -207,9 +227,9 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1573078306.536420
-Z20 !s107 array_multiplier/one_bit_half_adder.v|array_multiplier/one_bit_full_adder.v|array_multiplier/eight_bit_array_multiplier.v|array_multiplier/array_levels.v|array_multiplier/array_level_one.v|
-Z21 !s90 -reportprogress|300|array_multiplier/array_level_one.v|array_multiplier/array_levels.v|array_multiplier/eight_bit_array_multiplier.v|array_multiplier/one_bit_full_adder.v|array_multiplier/one_bit_half_adder.v|
+Z20 !s108 1573100767.258331
+Z21 !s107 array_multiplier/one_bit_half_adder.v|array_multiplier/one_bit_full_adder.v|array_multiplier/eight_bit_array_multiplier_top.v|array_multiplier/eight_bit_array_multiplier.v|array_multiplier/array_levels.v|array_multiplier/array_level_one.v|
+Z22 !s90 -reportprogress|300|array_multiplier/array_level_one.v|array_multiplier/array_levels.v|array_multiplier/eight_bit_array_multiplier.v|array_multiplier/eight_bit_array_multiplier_top.v|array_multiplier/one_bit_full_adder.v|array_multiplier/one_bit_half_adder.v|
 !i113 0
 R12
 varray_levels
@@ -219,7 +239,7 @@ R2
 Inkc2[B7hQR[AD>bz?677T3
 R3
 R0
-w1572816855
+R19
 8array_multiplier/array_levels.v
 Farray_multiplier/array_levels.v
 L0 1
@@ -227,9 +247,9 @@ R8
 r1
 !s85 0
 31
-R19
 R20
 R21
+R22
 !i113 0
 R12
 veight_bit_array_multiplier
@@ -242,7 +262,7 @@ R3
 R4
 S1
 R0
-R5
+w1573082242
 Farray_multiplier/eight_bit_array_multiplier.v
 R6
 R7
@@ -254,6 +274,26 @@ r1
 R9
 R10
 R11
+!i113 0
+R12
+veight_bit_array_multiplier_top
+R2
+!i10b 1
+!s100 RC^?m8dPWK>8Nfcm99b:92
+IgQ7:gBRBI:Ni>Z2=FCY^S1
+R3
+R0
+w1573082274
+8array_multiplier/eight_bit_array_multiplier_top.v
+Farray_multiplier/eight_bit_array_multiplier_top.v
+L0 1
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
 !i113 0
 R12
 veight_bit_wallace_tree
@@ -287,7 +327,7 @@ R2
 I055ZbEaROOKc<LPbeR;^l1
 R3
 R0
-w1572822149
+w1572821530
 8eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_1.v
 Feight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_1.v
 L0 1
@@ -295,9 +335,9 @@ R8
 r1
 !s85 0
 31
-Z22 !s108 1573078306.618105
-Z23 !s107 eight_bit_wallace_tree/one_bit_half_adder.v|eight_bit_wallace_tree/one_bit_full_adder.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_7.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_6.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_5.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_4.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_3.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_2.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_1.v|eight_bit_wallace_tree/eight_bit_wallace_tree.v|
-Z24 !s90 -reportprogress|300|eight_bit_wallace_tree/eight_bit_wallace_tree.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_1.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_2.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_3.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_4.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_5.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_6.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_7.v|eight_bit_wallace_tree/one_bit_full_adder.v|eight_bit_wallace_tree/one_bit_half_adder.v|
+Z23 !s108 1573100767.339087
+Z24 !s107 eight_bit_wallace_tree/one_bit_half_adder.v|eight_bit_wallace_tree/one_bit_full_adder.v|eight_bit_wallace_tree/eight_bit_wallace_tree_top.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_7.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_6.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_5.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_4.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_3.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_2.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_1.v|eight_bit_wallace_tree/eight_bit_wallace_tree.v|
+Z25 !s90 -reportprogress|300|eight_bit_wallace_tree/eight_bit_wallace_tree.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_1.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_2.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_3.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_4.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_5.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_6.v|eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_7.v|eight_bit_wallace_tree/eight_bit_wallace_tree_top.v|eight_bit_wallace_tree/one_bit_full_adder.v|eight_bit_wallace_tree/one_bit_half_adder.v|
 !i113 0
 R12
 veight_bit_wallace_tree_reduc_layer_2
@@ -307,7 +347,7 @@ R2
 IZk=W0ENL9[]L79e`_3Ez01
 R3
 R0
-Z25 w1573066160
+w1572990615
 8eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_2.v
 Feight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_2.v
 L0 1
@@ -315,9 +355,9 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !i113 0
 R12
 veight_bit_wallace_tree_reduc_layer_3
@@ -327,7 +367,7 @@ R2
 ILRT2XIT`ZjgZPjJP?Pfc41
 R3
 R0
-R25
+w1572990604
 8eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_3.v
 Feight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_3.v
 L0 1
@@ -335,9 +375,9 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !i113 0
 R12
 veight_bit_wallace_tree_reduc_layer_4
@@ -347,7 +387,7 @@ R2
 I6aCUA6ciinK<LOBVih?Ck1
 R3
 R0
-R25
+w1572990595
 8eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_4.v
 Feight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_4.v
 L0 1
@@ -355,9 +395,9 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !i113 0
 R12
 veight_bit_wallace_tree_reduc_layer_5
@@ -367,7 +407,7 @@ R2
 I[i^_BVi^:1S8E;]fYCZ<J1
 R3
 R0
-w1573067656
+R5
 8eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_5.v
 Feight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_5.v
 L0 1
@@ -375,9 +415,9 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !i113 0
 R12
 veight_bit_wallace_tree_reduc_layer_6
@@ -387,7 +427,7 @@ R2
 IHbMLjd_MBjE96P4VizUO83
 R3
 R0
-Z26 w1572902033
+w1572823956
 8eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_6.v
 Feight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_6.v
 L0 1
@@ -395,9 +435,9 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !i113 0
 R12
 veight_bit_wallace_tree_reduc_layer_7
@@ -407,7 +447,7 @@ R2
 Ign?<1EER:MT^@VQ_JK>0C2
 R3
 R0
-R26
+w1572823945
 8eight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_7.v
 Feight_bit_wallace_tree/eight_bit_wallace_tree_reduc_layer_7.v
 L0 1
@@ -415,9 +455,29 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
+!i113 0
+R12
+veight_bit_wallace_tree_top
+R2
+!i10b 1
+!s100 OWPR3WZP57idATm4FfdS43
+I:IEVl]Q>P5mAbBA[cMo?K0
+R3
+R0
+w1573082894
+8eight_bit_wallace_tree/eight_bit_wallace_tree_top.v
+Feight_bit_wallace_tree/eight_bit_wallace_tree_top.v
+L0 1
+R8
+r1
+!s85 0
+31
+R23
+R24
+R25
 !i113 0
 R12
 vone_approx_eight_bit_wallace_tree
@@ -451,9 +511,29 @@ R2
 Idh``aYMc20n]2O?64bUPH2
 R3
 R0
-w1573077980
+R5
 8approximate_eight_bit_wallace_tree/one_adder_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v
 Fapproximate_eight_bit_wallace_tree/one_adder_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v
+L0 1
+R8
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R12
+vone_approx_eight_bit_wallace_tree_top
+R2
+!i10b 1
+!s100 hD`HlM>i33UFDeGi9TV3V3
+I7Elnk?`^b0[lgY02n4oYn3
+R3
+R0
+w1573100572
+8approximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree_top.v
+Fapproximate_eight_bit_wallace_tree/one_adder_approximate/one_approx_eight_bit_wallace_tree_top.v
 L0 1
 R8
 r1
@@ -471,7 +551,7 @@ R2
 I1UULlCn5O[NAfA[m4G]]k3
 R3
 R0
-w1573067507
+R5
 8eight_bit_wallace_tree/one_bit_full_adder.v
 Feight_bit_wallace_tree/one_bit_full_adder.v
 L0 1
@@ -479,9 +559,9 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !i113 0
 R12
 vone_bit_half_adder
@@ -491,7 +571,7 @@ R2
 IQ4^<HOVSTGgNMl62N9lAS1
 R3
 R0
-w1572816352
+w1572811971
 8eight_bit_wallace_tree/one_bit_half_adder.v
 Feight_bit_wallace_tree/one_bit_half_adder.v
 L0 1
@@ -499,9 +579,9 @@ R8
 r1
 !s85 0
 31
-R22
 R23
 R24
+R25
 !i113 0
 R12
 vpapprox_eight_bit_wallace_tree
@@ -526,6 +606,26 @@ r1
 R9
 R10
 R11
+!i113 0
+R12
+vpapprox_eight_bit_wallace_tree_top
+!s110 1573100766
+!i10b 1
+!s100 >cZmDYZ]8<kCnnieDVgl;2
+I:N1^Pm=VkhCzl@?6P2oRT1
+R3
+R0
+w1573099637
+8approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree_top.v
+Fapproximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree_top.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1573100766.903013
+!s107 approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree_top.v|approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/first_layer_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|
+!s90 -reportprogress|300|approximate_eight_bit_wallace_tree/first_layer_approximate/approx_eight_bit_wallace_tree_reduc_layer_1.v|approximate_eight_bit_wallace_tree/first_layer_approximate/approximate_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_2.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_3.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_4.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_5.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_6.v|approximate_eight_bit_wallace_tree/first_layer_approximate/eight_bit_wallace_tree_reduc_layer_7.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_full_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/one_bit_half_adder.v|approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree.v|approximate_eight_bit_wallace_tree/first_layer_approximate/papprox_eight_bit_wallace_tree_top.v|
 !i113 0
 R12
 vtestbench
@@ -553,7 +653,7 @@ R11
 R12
 Ttestbench_opt
 R2
-VBlF5ZEZRTz:YEzV6eeK3F1
+V>zEJLk4YMg3Z[AIDDWLI`1
 04 9 4 work testbench fast 0
 o+acc
 ntestbench_opt
