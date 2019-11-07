@@ -1,3 +1,4 @@
+-----------------------------------
 Results: One Approximate Adder
 Number of errors: 7936
 Error Percentage: 12.109375 %
