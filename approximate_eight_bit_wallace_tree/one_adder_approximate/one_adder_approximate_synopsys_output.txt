@@ -1,9 +1,11 @@
-dc_shell> source synth_eight_bit_wallace_tree.tcl 
+dc_shell> source synth_one_adder_approximate.tcl 
 Running PRESTO HDLC
-Searching for ./eight_bit_wallace_tree.v
-Searching for ./SRC/eight_bit_wallace_tree.v
-Searching for ./eight_bit_wallace_tree_reduc_layer_1.v
-Searching for ./SRC/eight_bit_wallace_tree_reduc_layer_1.v
+Searching for ./one_approx_eight_bit_wallace_tree.v
+Searching for ./SRC/one_approx_eight_bit_wallace_tree.v
+Searching for ./approx_eight_bit_wallace_tree_reduc_layer_1.v
+Searching for ./SRC/approx_eight_bit_wallace_tree_reduc_layer_1.v
+Searching for ./approximate_full_adder.v
+Searching for ./SRC/approximate_full_adder.v
 Searching for ./eight_bit_wallace_tree_reduc_layer_2.v
 Searching for ./SRC/eight_bit_wallace_tree_reduc_layer_2.v
 Searching for ./eight_bit_wallace_tree_reduc_layer_3.v
@@ -20,8 +22,9 @@ Searching for ./one_bit_half_adder.v
 Searching for ./SRC/one_bit_half_adder.v
 Searching for ./one_bit_full_adder.v
 Searching for ./SRC/one_bit_full_adder.v
-Compiling source file ./SRC/eight_bit_wallace_tree.v
-Compiling source file ./SRC/eight_bit_wallace_tree_reduc_layer_1.v
+Compiling source file ./SRC/one_approx_eight_bit_wallace_tree.v
+Compiling source file ./SRC/approx_eight_bit_wallace_tree_reduc_layer_1.v
+Compiling source file ./SRC/approximate_full_adder.v
 Compiling source file ./SRC/eight_bit_wallace_tree_reduc_layer_2.v
 Compiling source file ./SRC/eight_bit_wallace_tree_reduc_layer_3.v
 Compiling source file ./SRC/eight_bit_wallace_tree_reduc_layer_4.v
@@ -39,8 +42,8 @@ Loading db file '/CMC/tools/synopsys/syn_vF-2011.09-SP4/libraries/syn/standard.s
 Running PRESTO HDLC
 Presto compilation completed successfully.
 Elaborated 1 design.
-Current design is now 'eight_bit_wallace_tree'.
-Information: Building the design 'eight_bit_wallace_tree_reduc_layer_1'. (HDL-193)
+Current design is now 'one_approx_eight_bit_wallace_tree'.
+Information: Building the design 'one_approx_eight_bit_wallace_tree_reduc_layer_1'. (HDL-193)
 Presto compilation completed successfully.
 Information: Building the design 'eight_bit_wallace_tree_reduc_layer_2'. (HDL-193)
 Presto compilation completed successfully.
@@ -55,6 +58,8 @@ Presto compilation completed successfully.
 Information: Building the design 'eight_bit_wallace_tree_reduc_layer_7'. (HDL-193)
 Presto compilation completed successfully.
 Information: Building the design 'one_bit_half_adder'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'approximate_full_adder'. (HDL-193)
 Presto compilation completed successfully.
 Information: Building the design 'one_bit_full_adder'. (HDL-193)
 Presto compilation completed successfully.
@@ -82,18 +87,15 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
   Processing 'eight_bit_wallace_tree_reduc_layer_4'
   Processing 'eight_bit_wallace_tree_reduc_layer_3'
   Processing 'eight_bit_wallace_tree_reduc_layer_2'
-  Processing 'eight_bit_wallace_tree_reduc_layer_1'
-  Processing 'eight_bit_wallace_tree'
+  Processing 'approximate_full_adder_0'
+  Processing 'one_approx_eight_bit_wallace_tree_reduc_layer_1'
+  Processing 'one_approx_eight_bit_wallace_tree'
 
   Updating timing information
 Information: Updating design information... (UID-85)
 
   Beginning Mapping Optimizations  (Medium effort)
   -------------------------------
-  Structuring 'one_bit_full_adder_47'
-  Mapping 'one_bit_full_adder_47'
-  Structuring 'one_bit_full_adder_46'
-  Mapping 'one_bit_full_adder_46'
   Structuring 'one_bit_full_adder_45'
   Mapping 'one_bit_full_adder_45'
   Structuring 'one_bit_full_adder_44'
@@ -184,6 +186,8 @@ Information: Updating design information... (UID-85)
   Mapping 'one_bit_full_adder_2'
   Structuring 'one_bit_full_adder_1'
   Mapping 'one_bit_full_adder_1'
+  Structuring 'approximate_full_adder_1'
+  Mapping 'approximate_full_adder_1'
   Structuring 'one_bit_half_adder_7'
   Mapping 'one_bit_half_adder_7'
   Structuring 'one_bit_half_adder_6'
@@ -200,6 +204,8 @@ Information: Updating design information... (UID-85)
   Mapping 'one_bit_half_adder_1'
   Structuring 'one_bit_full_adder_0'
   Mapping 'one_bit_full_adder_0'
+  Structuring 'approximate_full_adder_0'
+  Mapping 'approximate_full_adder_0'
   Structuring 'one_bit_half_adder_0'
   Mapping 'one_bit_half_adder_0'
   Structuring 'eight_bit_wallace_tree_reduc_layer_7'
@@ -214,24 +220,24 @@ Information: Updating design information... (UID-85)
   Mapping 'eight_bit_wallace_tree_reduc_layer_3'
   Structuring 'eight_bit_wallace_tree_reduc_layer_2'
   Mapping 'eight_bit_wallace_tree_reduc_layer_2'
-  Structuring 'eight_bit_wallace_tree_reduc_layer_1'
-  Mapping 'eight_bit_wallace_tree_reduc_layer_1'
+  Structuring 'one_approx_eight_bit_wallace_tree_reduc_layer_1'
+  Mapping 'one_approx_eight_bit_wallace_tree_reduc_layer_1'
 
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
 
 
 
@@ -241,9 +247,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -252,23 +258,23 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
 
 
   Beginning Area-Recovery Phase  (max_area 0)
@@ -277,23 +283,23 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
-    0:00:39    7350.6      0.00       0.0       0.0                           349948.3750
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
+    0:00:36    7261.1      0.00       0.0       0.0                           344178.9062
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: There is no defined clock in the design. (PWR-80)
 Warning: Design has unannotated primary inputs. (PWR-414)

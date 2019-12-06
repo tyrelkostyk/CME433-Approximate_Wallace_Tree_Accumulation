@@ -1,9 +1,8 @@
 # specify top-level design
-set DESIGN_NAME "eight_bit_array_multiplier_top"
+set DESIGN_NAME "eight_bit_array_multiplier"
 
 # list of source files
-set RTL_SOURCE_FILES "eight_bit_array_multiplier_top.v \
-eight_bit_array_multiplier.v \
+set RTL_SOURCE_FILES "eight_bit_array_multiplier.v \
 array_levels.v \
 array_level_one.v \
 one_bit_half_adder.v \
@@ -19,7 +18,7 @@ analyze -format verilog ${RTL_SOURCE_FILES}
 elaborate ${DESIGN_NAME}
 
 # resolve references by linking design to logical libraries
-link
+link "vst_n18_sc_tsm_c4_wc.db"
 
 # use multiple cores
 set_host_options -max_cores 8
