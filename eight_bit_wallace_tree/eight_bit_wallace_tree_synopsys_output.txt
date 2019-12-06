@@ -1,0 +1,275 @@
+Running PRESTO HDLC
+Searching for ./eight_bit_wallace_tree_top.v
+Searching for ./eight_bit_wallace_tree_top.v
+Searching for ./eight_bit_wallace_tree_reduc_layer_1.v
+Searching for ./eight_bit_wallace_tree_reduc_layer_2.v
+Searching for ./eight_bit_wallace_tree_reduc_layer_3.v
+Searching for ./eight_bit_wallace_tree_reduc_layer_4.v
+Searching for ./eight_bit_wallace_tree_reduc_layer_5.v
+Searching for ./eight_bit_wallace_tree_reduc_layer_6.v
+Searching for ./eight_bit_wallace_tree_reduc_layer_7.v
+Searching for ./one_bit_half_adder.v
+Searching for ./one_bit_full_adder.v
+Compiling source file ./eight_bit_wallace_tree_top.v
+Compiling source file ./eight_bit_wallace_tree_top.v
+Error:  Unable to open modfile /home/tst024/engr-ece/CME342/synopsys/CME433-Approximate_Wallace_Tree_Accumulation/eight_bit_wallace_tree/work/eight_bit_wallace_tree_top-verilog.pvl for writing: No such file or directory (VER-196)
+*** Presto compilation terminated with 1 errors. ***
+Error: Cannot find the design 'eight_bit_wallace_tree_top' in the library 'WORK'. (LBR-0)
+
+  Linking design 'eight_bit_array_multiplier_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (55 designs)              /home/tst024/engr-ece/CME342/synopsys/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/eight_bit_array_multiplier_top.db, etc
+  vst_n18_sc_tsm_c4_wc (library) /CMC/kits/cmosp18.5.2/synopsys/2004/syn/vst_n18_sc_tsm_c4_wc.db
+  array_level_one             /home/tst024/engr-ece/CME342/synopsys/CME433-Approximate_Wallace_Tree_Accumulation/array_multiplier/array_level_one.db
+
+Warning: Unable to resolve reference 'one_bit_half_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_47' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_46' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_45' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_44' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_43' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_half_adder_7' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_half_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_47' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_46' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_45' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_44' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_43' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_half_adder_7' in 'array_level_one'. (LINK-5)
+Warning: Design 'eight_bit_array_multiplier_top' has '8' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'eight_bit_array_multiplier_top' has '8' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Performing leakage power and dynamic power optimization. (PWR-850)
+
+  Loading target library 'vst_n18_sc_tsm_c4_wc'
+Warning: Unable to resolve reference 'one_bit_half_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_47' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_46' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_45' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_44' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_43' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_half_adder_7' in 'array_level_one'. (LINK-5)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'one_bit_full_adder_2'
+  Processing 'one_bit_half_adder_2'
+  Processing 'array_levels_1'
+  Processing 'array_level_one'
+  Processing 'eight_bit_array_multiplier_top'
+Warning: Unable to resolve reference 'one_bit_half_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_0' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_47' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_46' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_45' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_44' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_full_adder_43' in 'array_level_one'. (LINK-5)
+Warning: Unable to resolve reference 'one_bit_half_adder_7' in 'array_level_one'. (LINK-5)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'one_bit_full_adder_42'
+  Mapping 'one_bit_full_adder_42'
+  Structuring 'one_bit_full_adder_41'
+  Mapping 'one_bit_full_adder_41'
+  Structuring 'one_bit_full_adder_40'
+  Mapping 'one_bit_full_adder_40'
+  Structuring 'one_bit_full_adder_39'
+  Mapping 'one_bit_full_adder_39'
+  Structuring 'one_bit_full_adder_38'
+  Mapping 'one_bit_full_adder_38'
+  Structuring 'one_bit_full_adder_37'
+  Mapping 'one_bit_full_adder_37'
+  Structuring 'one_bit_full_adder_36'
+  Mapping 'one_bit_full_adder_36'
+  Structuring 'one_bit_full_adder_35'
+  Mapping 'one_bit_full_adder_35'
+  Structuring 'one_bit_full_adder_34'
+  Mapping 'one_bit_full_adder_34'
+  Structuring 'one_bit_full_adder_33'
+  Mapping 'one_bit_full_adder_33'
+  Structuring 'one_bit_full_adder_32'
+  Mapping 'one_bit_full_adder_32'
+  Structuring 'one_bit_full_adder_31'
+  Mapping 'one_bit_full_adder_31'
+  Structuring 'one_bit_full_adder_30'
+  Mapping 'one_bit_full_adder_30'
+  Structuring 'one_bit_full_adder_29'
+  Mapping 'one_bit_full_adder_29'
+  Structuring 'one_bit_full_adder_28'
+  Mapping 'one_bit_full_adder_28'
+  Structuring 'one_bit_full_adder_27'
+  Mapping 'one_bit_full_adder_27'
+  Structuring 'one_bit_full_adder_26'
+  Mapping 'one_bit_full_adder_26'
+  Structuring 'one_bit_full_adder_25'
+  Mapping 'one_bit_full_adder_25'
+  Structuring 'one_bit_full_adder_24'
+  Mapping 'one_bit_full_adder_24'
+  Structuring 'one_bit_full_adder_23'
+  Mapping 'one_bit_full_adder_23'
+  Structuring 'one_bit_full_adder_22'
+  Mapping 'one_bit_full_adder_22'
+  Structuring 'one_bit_full_adder_21'
+  Mapping 'one_bit_full_adder_21'
+  Structuring 'one_bit_full_adder_20'
+  Mapping 'one_bit_full_adder_20'
+  Structuring 'one_bit_full_adder_19'
+  Mapping 'one_bit_full_adder_19'
+  Structuring 'one_bit_full_adder_18'
+  Mapping 'one_bit_full_adder_18'
+  Structuring 'one_bit_full_adder_17'
+  Mapping 'one_bit_full_adder_17'
+  Structuring 'one_bit_full_adder_16'
+  Mapping 'one_bit_full_adder_16'
+  Structuring 'one_bit_full_adder_15'
+  Mapping 'one_bit_full_adder_15'
+  Structuring 'one_bit_full_adder_14'
+  Mapping 'one_bit_full_adder_14'
+  Structuring 'one_bit_full_adder_13'
+  Mapping 'one_bit_full_adder_13'
+  Structuring 'one_bit_full_adder_12'
+  Mapping 'one_bit_full_adder_12'
+  Structuring 'one_bit_full_adder_11'
+  Mapping 'one_bit_full_adder_11'
+  Structuring 'one_bit_full_adder_10'
+  Mapping 'one_bit_full_adder_10'
+  Structuring 'one_bit_full_adder_9'
+  Mapping 'one_bit_full_adder_9'
+  Structuring 'one_bit_full_adder_8'
+  Mapping 'one_bit_full_adder_8'
+  Structuring 'one_bit_full_adder_7'
+  Mapping 'one_bit_full_adder_7'
+  Structuring 'one_bit_full_adder_6'
+  Mapping 'one_bit_full_adder_6'
+  Structuring 'one_bit_full_adder_5'
+  Mapping 'one_bit_full_adder_5'
+  Structuring 'one_bit_full_adder_4'
+  Mapping 'one_bit_full_adder_4'
+  Structuring 'one_bit_full_adder_3'
+  Mapping 'one_bit_full_adder_3'
+  Structuring 'one_bit_full_adder_2'
+  Mapping 'one_bit_full_adder_2'
+  Structuring 'one_bit_half_adder_6'
+  Mapping 'one_bit_half_adder_6'
+  Structuring 'one_bit_half_adder_5'
+  Mapping 'one_bit_half_adder_5'
+  Structuring 'one_bit_half_adder_4'
+  Mapping 'one_bit_half_adder_4'
+  Structuring 'one_bit_half_adder_3'
+  Mapping 'one_bit_half_adder_3'
+  Structuring 'one_bit_half_adder_2'
+  Mapping 'one_bit_half_adder_2'
+  Structuring 'array_levels_5'
+  Mapping 'array_levels_5'
+  Structuring 'array_levels_4'
+  Mapping 'array_levels_4'
+  Structuring 'array_levels_3'
+  Mapping 'array_levels_3'
+  Structuring 'array_levels_2'
+  Mapping 'array_levels_2'
+  Structuring 'array_levels_1'
+  Mapping 'array_levels_1'
+  Structuring 'one_bit_full_adder_1'
+  Mapping 'one_bit_full_adder_1'
+  Structuring 'one_bit_half_adder_1'
+  Mapping 'one_bit_half_adder_1'
+  Structuring 'array_levels_0'
+  Mapping 'array_levels_0'
+  Structuring 'array_level_one'
+  Mapping 'array_level_one'
+  Structuring 'eight_bit_array_multiplier_top'
+  Mapping 'eight_bit_array_multiplier_top'
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:53    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:53    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:53    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:53    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:54    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+    0:00:55    8659.7      0.00       0.0       0.0                           455591.9062
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+Loading db file '/CMC/kits/cmosp18.5.2/synopsys/2004/syn/vst_n18_sc_tsm_c4_wc.db'
+
+  Optimization Complete
+  ---------------------
