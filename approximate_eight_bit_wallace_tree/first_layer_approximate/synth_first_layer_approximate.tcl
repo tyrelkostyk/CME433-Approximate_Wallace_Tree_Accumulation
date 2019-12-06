@@ -24,7 +24,7 @@ analyze -format verilog ${RTL_SOURCE_FILES}
 elaborate ${DESIGN_NAME}
 
 # resolve references by linking design to logical libraries
-link
+link "vst_n18_sc_tsm_c4_wc.db"
 
 # use multiple cores
 set_host_options -max_cores 8
